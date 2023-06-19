@@ -3,7 +3,7 @@ import React from 'react'
 function LastProductInDb() {
     const [product, setProduct]= React.useState()
     React.useEffect(()=>{
-        fetch('http://localhost:3001/api/products')
+        fetch('http://localhost:3000/api/products')
             .then(res => res.json())
             .then(data => {
                 const last = data.data[data.data.length -1] 

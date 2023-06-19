@@ -5,10 +5,10 @@ function UserList(props){
     return (
         <React.Fragment>
             <tr>
-                <td>{props.first_name}</td>
-                <td>{props.last_name}</td>
+                <td>{props.firstName}</td>
+                <td>{props.LastName}</td>
                 <td>{props.email}</td>
-                <td>{props.phone}</td>
+                <td>{props.cell}</td>
                 
             </tr>
         </React.Fragment>
@@ -17,10 +17,10 @@ function UserList(props){
 
 UserList.propTypes = {
     id: PropTypes.number,
-    first_name: PropTypes.string,
-    last_name: PropTypes.string,
+    firstName: PropTypes.string,
+    LastName: PropTypes.string,
     email: PropTypes.string,
-    phone: PropTypes.string,
+    cell: PropTypes.string,
 }
 
 export default UserList

@@ -11,7 +11,7 @@ class User extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/api/users')
+        fetch('http://localhost:3000/api/users')
         .then(res => res.json())
         .then(data => {
             this.setState({ users: data.data })
@@ -25,19 +25,20 @@ class User extends React.Component {
         return (
             <>
                 {/*<!-- USUARIO LIST -->*/}
-                <h1 className="title">Usuarios en base de datos</h1>
+                
 
                 {/*<!-- DataTales -->*/}
                 <div className="card margin shadow mb-4">
+                <h1 className="title">Usuarios en base de datos</h1>
                     <div className="card-body">
                         <div className="table-responsive">
                             <table className="table table1 table-bordered" id="dataTable" width="100%" cellSpacing="0">
                                 <thead>
                                     <tr>
-                                        <th>Nombres</th>
-                                        <th>Apellidos</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
                                         <th>Email</th>
-                                        <th>Telefono</th>
+                                        <th>Celular</th>
                                         
                                     </tr>
                                 </thead>

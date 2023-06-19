@@ -10,7 +10,7 @@ class User extends React.Component {
 function LastUserInDb() {
     const [user, setUser] = React.useState()
     React.useEffect(() => {
-        fetch('http://localhost:3001/api/users')
+        fetch('http://localhost:3000/api/users')
             .then(res => res.json())
             .then(data => {
                 const last = data.data[data.data.length - 1]
@@ -43,10 +43,10 @@ function LastUserInDb() {
                                 <tbody className='effec'>
                                     {
                                         <>
-                                            <td>{user.first_name}</td>
-                                            <td>{user.last_name}</td>
+                                            <td>{user.firstName}</td>
+                                            <td>{user.LastName}</td>
                                             <td>{user.email}</td>
-                                            <td>{user.phone}</td>
+                                            <td>{user.cell}</td>
                                         </>
                                        
                                         

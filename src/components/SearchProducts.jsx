@@ -5,7 +5,7 @@ function SearchProducts(props) {
     const [keyword, setKeyword] = useState('');
 
     const getProducts = () => {
-        fetch(`http://localhost:3001/api/products?search=${keyword}`)
+        fetch(`http://localhost:3000/api/products?search=${keyword}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data.data || []);
