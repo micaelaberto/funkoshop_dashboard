@@ -5,7 +5,7 @@
 }
 
 .backgroundSideBar{
-    background-color: blue;
+    background-color: grey;
 
 }
 
@@ -22,7 +22,7 @@
 .title-last{
     font-weight: bold;
     text-align: center;
-    color: gray;
+    color: black;
 }
 .tableUser{
     width: 100%;
@@ -52,7 +52,7 @@
     color: white;
     font-size: 20px;
     text-align: center;
-    background-color: black;
+    background-color: blue;
    
 }
 
