@@ -44,7 +44,7 @@ function LastUserInDb() {
                                     {
                                         <>
                                             <td>{user.firstName}</td>
-                                            <td>{user.LastName}</td>
+                                            <td>{user.lastName}</td>
                                             <td>{user.email}</td>
                                             <td>{user.cell}</td>
                                         </>

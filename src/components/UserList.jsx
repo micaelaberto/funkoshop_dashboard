@@ -6,7 +6,7 @@ function UserList(props){
         <React.Fragment>
             <tr>
                 <td>{props.firstName}</td>
-                <td>{props.LastName}</td>
+                <td>{props.lastName}</td>
                 <td>{props.email}</td>
                 <td>{props.cell}</td>
                 
@@ -18,7 +18,7 @@ function UserList(props){
 UserList.propTypes = {
     id: PropTypes.number,
     firstName: PropTypes.string,
-    LastName: PropTypes.string,
+    lastName: PropTypes.string,
     email: PropTypes.string,
     cell: PropTypes.string,
 }
