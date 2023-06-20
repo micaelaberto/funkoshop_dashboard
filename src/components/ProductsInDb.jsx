@@ -40,7 +40,7 @@ class ProductsInDb extends React.Component {
                                         <div className="text-center">
                                             <img
                                                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                                                src={`http://localhost:3000/images/products/${product.image}`}
+                                                src={`http://localhost:3000/images/funkos/${product.images[0]?product.images[0].url:'default.jpg'}`}
                                                 style={{ width: '100%', objectFit: 'cover' }}
                                             />
                                             {product.description}

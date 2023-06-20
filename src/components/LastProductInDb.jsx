@@ -23,7 +23,7 @@ function LastProductInDb() {
                 <div className="card-body">
                     <div className="text-center">
                     <p>{product.name}</p>
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ "width": "40rem" }} src={`http://localhost:3001/images/products/${product.image}`} alt=" Star Wars - Mandalorian " />
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ "width": "40rem" }} src={`http://localhost:3000/images/funkos/${product.images[0]?product.images[0].url:'default.jpg'}`} alt=" Star Wars - Mandalorian " />
                     </div>
                     <p>{product.description}</p>
                 </div>

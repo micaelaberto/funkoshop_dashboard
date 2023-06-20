@@ -54,7 +54,7 @@ function SearchProducts(props) {
                                     <div className="text-center">
                                         <img
                                             className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                                            src={`http://localhost:3001/images/products/${product.image}`}
+                                            src={`http://localhost:3000/images/funkos/${product.images[0]?product.images[0].url:'default.jpg'}`}
                                             alt={product.description}
                                             style={{ width: '100%', objectFit: 'cover' }}
                                         />
